@@ -39,7 +39,7 @@ Things you may want to cover:
 
 ## usersテーブル
 |Column|Type|Options|
-|------|----|index: true|
+|------|----|-------|
 |name|string|null: false|
 |email|string|null: fals|
 
