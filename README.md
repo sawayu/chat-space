@@ -39,7 +39,7 @@ Things you may want to cover:
 
 ## usersテーブル
 |Column|Type|Options|
-|------|----|-------|
+|------|----|index: true|
 |name|string|null: false|
 |email|string|null: fals|
 
@@ -65,8 +65,8 @@ Things you may want to cover:
 |------|----|-------|
 |userID|string|null: fasten, foreign_key: true|
 |groupID|string|null: faste|
-|messege|string|null: false|
-|Photo|string|null: false|
+|messege|string||
+|Photo|string||
 
 ### Association
 - belongs_to :group
