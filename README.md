@@ -63,6 +63,8 @@ Things you may want to cover:
 ## messegesテーブル
 |Column|Type|Options|
 |------|----|-------|
+|userID|string|null: fasten, foreign_key: true|
+|groupID|string|null: faste|
 |messege|string|null: false|
 |Photo|string|null: false|
 
