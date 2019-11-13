@@ -53,7 +53,6 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|menber|string||
 
 ### Association
 - has_many :users, through: :groups_users
