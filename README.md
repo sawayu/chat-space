@@ -41,7 +41,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|`index: true`|
-|email|string|null: fals|
+|email|string|null: false|
 
 ### Association
 - has_many :groups, through:  :groups_users
