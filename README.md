@@ -40,7 +40,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|index: true|
+|name|string|`index: true`|
 |email|string|null: fals|
 
 ### Association
