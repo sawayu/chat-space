@@ -64,7 +64,6 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |userID|string|null: fasten, foreign_key: true|
-|groupID|string|null: faste|
 |text|string||
 |Photo|string||
 
