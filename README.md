@@ -65,7 +65,7 @@ Things you may want to cover:
 |------|----|-------|
 |userID|string|null: fasten, foreign_key: true|
 |groupID|string|null: faste|
-|messege|string||
+|text|string||
 |Photo|string||
 
 ### Association
