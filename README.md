@@ -63,9 +63,10 @@ Things you may want to cover:
 ## messegesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|userID|string|null: fasten, foreign_key: true|
-|text|string||
-|Photo|string||
+|user_id|string|null: fasten, foreign_key: true|
+|group_id|string|null: faste|
+|text|text||
+|photo|string||
 
 ### Association
 - belongs_to :group
