@@ -1,13 +1,18 @@
+
+.messages
+  = render @messages
+  
 .chat-main
   .main-header
     .main-header__left-box
       .left-box__group
-        グループ
+        = @group.name
         .group__menber
           .menber-name
-            menber : sawayu
-    .main-header__edit-btm
-      Edit
+            menber : 
+            - @group.users.each do |user|
+              = user.name
+      = link_to "Edit",edit_group_path(@group),class: "main-header__edit-btm"
   .messages
     .message
       .message-upper-info
@@ -18,13 +23,11 @@
       .text
         あいう
   .form
-    .input-box
-      .new-message
-        new message
-        .box-image
-          %label{class: "image-icon"}
-            = icon('fas', 'image')
-            %input.file{type: "file"}
-    .send
-      Send
-      
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .input-box
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
+    
