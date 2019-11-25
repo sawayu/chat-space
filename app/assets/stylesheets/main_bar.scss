@@ -19,21 +19,20 @@
         margin-top: 35px;
         .group__menber{
           .menber-name{
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 12px;
             color: #999999;
-            display: flex;
           }
         }
       }
       .main-header__edit-btm{
         font-size: 16px;
         color: #38aef0;
-        margin-top: 28px;
+        margin: 30px 0 0 1000px;
         border: solid 1px #38aef0;
         padding: 0 20px;
         height: 40px;
-        line-height: 38px;
+        line-height: 40px;
         position: absolute;
       }
     }
@@ -45,20 +44,20 @@
     overflow: scroll;
     .message{
       padding-bottom: 40px;
-      .message-upper-info{
+      .upper-message{
         margin-bottom: 10px;
         display: flex;
-        .talker{
+        .upper-message__user-name{
           font-size: 16px;
           coler: #434a54;
         }
-        .data{
+        .upper-message__date{
           font-size: 12px;
           color: #999999;
           margin-left: 10px;
         }
       }
-      .text{
+      .lower-message{
         font-size: 14px;
         margin-bottom: 10px;
         coler: #434a54;
@@ -78,9 +77,20 @@
       padding-left: 10px;
     }
     .input-box{
-      
       display: flex;
 
+
+      .form__mask__image{
+        display: flex;
+        .icon{
+          line-height: 52px;
+          font-size: 23px;
+          margin: 0 0 0 -30px;
+        }
+        .hidden{
+          display: none;
+        }
+      }
       .form__submit{
         height: 50px;
         width: 100px;
@@ -90,17 +100,7 @@
         line-height: 50px;
         font-size: 18px;
         font-weight: unset;
-      }
-
-      .form__mask__image{
-        display: flex;
-        .icon{
-          line-height: 52px;
-          font-size: 23px;
-        }
-        .hidden{
-          display: none;
-        }
+        margin: 0 0 0 20px;
       }
     }
   }
