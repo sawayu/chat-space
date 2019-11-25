@@ -11,8 +11,8 @@
             - @group.users.each do |user|
               = user.name
 
-  .messagess
-    = render partial: 'messages/message', collection: @messagess
+  .messages
+    = render @messages
 
   .form
     = form_for [@group, @message] do |f|
